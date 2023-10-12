@@ -2,7 +2,12 @@
 import React from "react";
 import Image from "next/image";
 
+
+
+
 const Teste1 = () => {
+
+
   return (
     <div className="my-7 mx-auto text-center font-semibold text-[20px]">
       <div>Olá</div>
@@ -14,6 +19,9 @@ const Teste1 = () => {
         width={0}
         height={0}
       />
+      <div>
+        </div>  
+
     </div>
   );
 };
