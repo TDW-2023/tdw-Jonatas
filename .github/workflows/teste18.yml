@@ -1,0 +1,11 @@
+
+name: GitHub Actions Demo
+on: [pull_request]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+     - uses: actions/checkout@v4  
+     - run: npm ci
+     - run: npm run lint
+     - run: npx netlify-cli deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
